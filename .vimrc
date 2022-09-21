@@ -1,4 +1,4 @@
-" Dark color schema 
+" Dark color schema
 colorscheme industry
 " Indentation size
 set tabstop=2
