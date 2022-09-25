@@ -4,3 +4,6 @@
 [submodule ".vim/pack/colors/start/dracula"]
 	path = .vim/pack/colors/start/dracula
 	url = https://github.com/dracula/vim.git
+[submodule ".vim/pack/syntax/start/emmet"]
+	path = .vim/pack/syntax/start/emmet
+	url = https://github.com/mattn/emmet-vim.git
