@@ -22,3 +22,5 @@ set hlsearch
 packadd! dracula
 syntax enable
 colorscheme dracula
+" Load all packs
+packloadall

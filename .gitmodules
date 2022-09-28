@@ -7,3 +7,6 @@
 [submodule ".vim/pack/syntax/start/emmet"]
 	path = .vim/pack/syntax/start/emmet
 	url = https://github.com/mattn/emmet-vim.git
+[submodule ".vim/pack/plugins/start/prettier"]
+	path = .vim/pack/plugins/start/prettier
+	url = git@github.com:prettier/vim-prettier.git
