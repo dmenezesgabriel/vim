@@ -16,6 +16,14 @@ git submodule update --init
 
 ## Setup
 
+### Dependencies
+
+- **Prettier**
+
+```sh
+npm install -g prettier
+```
+
 ### Symbolic links
 
 - **Linux**:
