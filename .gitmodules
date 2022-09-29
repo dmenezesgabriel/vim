@@ -10,3 +10,6 @@
 [submodule ".vim/pack/plugins/start/prettier"]
 	path = .vim/pack/plugins/start/prettier
 	url = git@github.com:prettier/vim-prettier.git
+[submodule ".vim/pack/syntax/start/ale"]
+	path = .vim/pack/syntax/start/ale
+	url = git@github.com:dense-analysis/ale.git
