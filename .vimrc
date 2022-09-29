@@ -24,3 +24,5 @@ syntax enable
 colorscheme dracula
 " Load all packs
 packloadall
+" 256 color support for terminal
+set t_Co=256
