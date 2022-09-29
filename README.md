@@ -18,6 +18,8 @@ git submodule update --init
 
 ### Dependencies
 
+> Add submodule: git submodule add <git_url> .vim/pack/<folder>/start/<plugin_name>
+
 - **Prettier**
 
 ```sh
@@ -39,3 +41,5 @@ ln -s repo_path/.vimrc ~/.vimrc
 mklink /D C:\Users\user_name\.vimfiles C:\Users\user\repopath\.vim
 mklink /D C:\Users\user_name\.vimrc C:\Users\user\repopath\.vimrc
 ```
+
+
