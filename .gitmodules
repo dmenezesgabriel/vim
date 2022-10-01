@@ -13,3 +13,6 @@
 [submodule ".vim/pack/syntax/start/ale"]
 	path = .vim/pack/syntax/start/ale
 	url = git@github.com:dense-analysis/ale.git
+[submodule ".vim/pack/plugins/start/airline"]
+	path = .vim/pack/plugins/start/airline
+	url = git@github.com:vim-airline/vim-airline.git
