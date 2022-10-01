@@ -26,3 +26,4 @@ colorscheme dracula
 packloadall
 " 256 color support for terminal
 set t_Co=256
+
