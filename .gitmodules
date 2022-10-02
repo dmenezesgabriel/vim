@@ -16,3 +16,6 @@
 [submodule ".vim/pack/plugins/start/airline"]
 	path = .vim/pack/plugins/start/airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule ".vim/pack/plugins/start/coc"]
+	path = .vim/pack/plugins/start/coc
+	url = git@github.com:neoclide/coc.nvim.git
