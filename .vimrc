@@ -130,6 +130,11 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
+" TODO
+" Set a language server for python autocomplete in coc
+" Add Python black from:
+" https://black.readthedocs.io/en/stable/integrations/editors.html
+
 " Plugins general
 packloadall
 silent! helptags ALL
