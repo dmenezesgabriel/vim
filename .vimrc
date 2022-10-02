@@ -46,15 +46,30 @@ set softtabstop=2
 let NERDTreeShowHidden=1
 
 " Airline config
-let g:airline_powerline_fonts=1
+if !exists('g:airline_symbols')
+      let g:airline_symbols = {}
+endif
 
-" Ale config
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+"Ale coonfig
 let g:ale_fixers = {
   \   '*': ['remove_trailing_lines', 'trim_whitespace'],
   \   'javascript': ['eslint', 'prettier'],
   \   'css' : ['prettier'],
   \   'markdown': ['prettier'],
-}
+  \}
 
 let g:ale_fix_on_save=1
 let g:ale_completion_enabled=1
