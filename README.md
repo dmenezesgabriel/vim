@@ -26,6 +26,14 @@ git submodule update --init
 npm install -g prettier
 ```
 
+- **Conqueror of completion**:
+```
+cd .vim/pack/plugins/start/coc && \
+npm install
+```
+
+:CocInstall coc-html coc-tsserver coc-pyright coc-json
+
 ### Symbolic links
 
 - **Linux**:
@@ -41,5 +49,3 @@ ln -s repo_path/.vimrc ~/.vimrc
 mklink /D C:\Users\user_name\.vimfiles C:\Users\user\repopath\.vim
 mklink /D C:\Users\user_name\.vimrc C:\Users\user\repopath\.vimrc
 ```
-
-
