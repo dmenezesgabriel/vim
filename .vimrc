@@ -40,10 +40,53 @@ set t_Co=256
 set expandtab
 set softtabstop=2
 
-" PLugins section
+" Spell checking
+set spell spelllang=pt_br,en_us
 
-" Show hidden files on NERDTRee
+" Highlight trailing spaces
+highlight RedundantSpaces ctermbg=red guibg=red
+match RedundantSpaces /\s\+$/
+au BufRead, BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" System clipboard
+set clipboard=unnamed
+
+" Indentation
+
+" Python
+au BufNewFile, BufRead *.py
+    \ set tabstop=4
+    \ | set softtabstop=4
+    \ | set shiftwidth=4
+    \ | set textwidth=79
+    \ | set expandtab
+    \ | set autoindent
+    \ | set fileformat=unix
+
+" Web
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ | set softtabstop=2
+    \ | set shiftwidth=2
+
+" Plugins section
+
+" NERDTRee
 let NERDTreeShowHidden=1
+
+nnoremap <C-e> :NERDTreeToggle<CR>
+
+let g:NERDTreeIndicatorMapCustom = {
+      \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
 
 " Airline config
 if !exists('g:airline_symbols')
@@ -63,7 +106,7 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-"Ale coonfig
+"Ale config
 let g:ale_fixers = {
   \   '*': ['remove_trailing_lines', 'trim_whitespace'],
   \   'javascript': ['eslint', 'prettier'],
@@ -74,6 +117,18 @@ let g:ale_fixers = {
 let g:ale_fix_on_save=1
 let g:ale_completion_enabled=1
 set omnifunc=ale#completion#OmniFunc
+
+" Conqueror of Completion
+set nobackup
+set nowritebackup
+set updatetime=30
+set signcolumn=yes
+" Tabs for autocomplete
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 " Plugins general
 packloadall
