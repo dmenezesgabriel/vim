@@ -1,3 +1,6 @@
+" Don't act like vi
+set nocompatible
+
 " Dark color schema
 colorscheme industry
 
@@ -68,6 +71,13 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ | set softtabstop=2
     \ | set shiftwidth=2
+
+" Search down into sub folders and set tab completion for all file related
+" tasks
+set path+=**
+
+" Display all matching files
+set wildmenu
 
 " Plugins section
 
