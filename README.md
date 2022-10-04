@@ -27,12 +27,13 @@ npm install -g prettier
 ```
 
 - **Conqueror of completion**:
+
 ```
 cd .vim/pack/plugins/start/coc && \
 npm install
 ```
 
-:CocInstall coc-html coc-tsserver coc-pyright coc-json
+:CocInstall coc-html coc-tsserver coc-css coc-json
 
 ### Symbolic links
 
