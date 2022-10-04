@@ -72,6 +72,15 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ | set softtabstop=2
     \ | set shiftwidth=2
 
+" Auto close brackets
+noremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 " Search down into sub folders and set tab completion for all file related
 " tasks
 set path+=**
