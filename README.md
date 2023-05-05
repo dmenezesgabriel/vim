@@ -48,5 +48,5 @@ ln -s repo_path/.vimrc ~/.vimrc
 
 ```sh
 mklink /D C:\Users\user_name\.vimfiles C:\Users\user\repopath\.vim
-mklink /D C:\Users\user_name\.vimrc C:\Users\user\repopath\.vimrc
+mklink C:\Users\user_name\.vimrc C:\Users\user\repopath\.vimrc
 ```
