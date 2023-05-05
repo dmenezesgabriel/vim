@@ -22,3 +22,6 @@
 [submodule ".vim/pack/plugins/start/commentary"]
 	path = .vim/pack/plugins/start/commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule ".vim/pack/plugins/start/vim-devicons"]
+	path = .vim/pack/plugins/start/vim-devicons
+	url = git@github.com:ryanoasis/vim-devicons.git

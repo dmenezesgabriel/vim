@@ -18,7 +18,9 @@ git submodule update --init
 
 ### Dependencies
 
-> Add submodule: git submodule add <git_url> .vim/pack/<folder>/start/<plugin_name>
+Download patched fonts for vim airline at [Nerd Fonts GitHub Repository](https://github.com/ryanoasis/nerd-fonts/releases) and configure yout terminal emulator to use that font. In Windows terminal right click, go to configuration > profile > default> appearance > Font Type.
+
+> Add submodule: git submodule add <git_url> .vim/pack/\<folder\>/start/<plugin_name>
 
 - **Prettier**
 
