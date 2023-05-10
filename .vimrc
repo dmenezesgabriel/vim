@@ -91,6 +91,9 @@ set path+=**
 " Display all matching files
 set wildmenu
 
+" Syntax Highlight
+au BufRead,BufNewFile, *.vue set syntax=html
+
 " Plugins section
 
 " NERDTree
