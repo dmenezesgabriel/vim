@@ -120,8 +120,10 @@ let g:ale_fixers = {
   \   'javascript': ['eslint', 'prettier'],
   \   'css' : ['prettier'],
   \   'markdown': ['prettier'],
+  \   'python': ['black']
   \}
 
+let g:ale_linters_explicit=1
 let g:ale_fix_on_save=1
 let g:ale_completion_enabled=1
 set omnifunc=ale#completion#OmniFunc
@@ -146,11 +148,16 @@ function! CheckBackspace() abort
       return !col || getline('.')[col - 1]  =~# '\s'
     endfunction
 
-" TODO
-" Set a language server for python autocomplete in coc
-" Add Python black from:
-" https://black.readthedocs.io/en/stable/integrations/editors.html
+" Black
+" https://black.readthedocs.io/en/stable/integrations/editors.html#vim
+"
+" uncomment to use without ale
+" augroup black_on_save
+"   autocmd!
+"   autocmd BufWritePre *.py Black
+" augroup end
 
 " Plugins general
+" https://black.readthedocs.io/en/stable/integrations/editors.html
 packloadall
 silent! helptags ALL

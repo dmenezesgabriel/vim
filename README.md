@@ -35,15 +35,48 @@ cd .vim/pack/plugins/start/coc && \
 npm install
 ```
 
-:CocInstall coc-html coc-tsserver coc-css coc-json
+At vim command mode:
+
+```
+CocInstall coc-html coc-tsserver coc-css coc-json @yaegassy/coc-volar @yaegassy/coc-volar-tools coc-pyright
+```
+
+- **Black**:
+
+```
+mkdir -p .vim/pack/python/start/black/plugin
+mkdir -p .vim/pack/python/start/black/autoload
+curl https://raw.githubusercontent.com/psf/black/stable/plugin/black.vim -o ~/.vim/pack/python/start/black/plugin/black.vim
+curl https://raw.githubusercontent.com/psf/black/stable/autoload/black.vim -o ~/.vim/pack/python/start/black/autoload/black.vim
+```
+
+psf/black virtual environment
+
+```
+python -m venv .vim/black
+```
+
+windows:
+
+```
+source .vim/black/Scripts/activate
+pip install black
+```
+
+linux:
+
+```
+source .vim/black/bin/activate
+pip install black
+```
 
 ### Symbolic links
 
 - **Linux**:
 
 ```sh
-ln -s repo_path/.vim ~/.vim
-ln -s repo_path/.vimrc ~/.vimrc
+ln -s repo_absolute_path/.vim ~/.vim
+ln -s repo_absolute_path/.vimrc ~/.vimrc
 ```
 
 - **Windows**:
