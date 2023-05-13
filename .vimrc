@@ -69,6 +69,10 @@ au BufNewFile, BufRead *.py
     \ | set autoindent
     \ | set fileformat=unix
 
+" Typescript
+" tsconfig.json is actually jsonc, help TypeScript set the correct filetype
+autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
+
 " Web
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
@@ -93,6 +97,7 @@ set wildmenu
 
 " Syntax Highlight
 au BufRead,BufNewFile, *.vue set syntax=html
+
 
 " Plugins section
 
