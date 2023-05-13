@@ -85,3 +85,10 @@ ln -s repo_absolute_path/.vimrc ~/.vimrc
 mklink /D C:\Users\user_name\.vimfiles C:\Users\user\repopath\.vim
 mklink C:\Users\user_name\.vimrc C:\Users\user\repopath\.vimrc
 ```
+
+## Cheat Sheet
+
+- `CTRL + w + v`: split vertically
+- `CTRL + w + [arrow keys]`: navigate through panels
+- On NERDTree file `t`: opens file on a new tab
+- `[tab number, optional] gt`: change tab
