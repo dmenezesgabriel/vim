@@ -92,3 +92,4 @@ mklink C:\Users\user_name\.vimrc C:\Users\user\repopath\.vimrc
 - `CTRL + w + [arrow keys]`: navigate through panels
 - On NERDTree file `t`: opens file on a new tab
 - `[tab number, optional] gt`: change tab
+- Type tags then `CTRL + y + ,` to use emmet
