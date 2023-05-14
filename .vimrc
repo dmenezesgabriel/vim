@@ -4,9 +4,6 @@ set encoding=UTF-8
 " Don't act like vi
 set nocompatible
 
-" Dark color schema
-colorscheme industry
-
 " Indentation size
 set tabstop=2
 
@@ -47,7 +44,7 @@ augroup end
 " Dracula theme
 packadd! dracula
 syntax enable
-colorscheme dracula
+" colorscheme dracula
 
 " 256 color support for terminal
 set t_Co=256
@@ -57,7 +54,7 @@ set expandtab
 set softtabstop=2
 
 " Spell checking
-set spell spelllang=pt_br,en_us
+" set spell spelllang=pt_br,en_us
 
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
