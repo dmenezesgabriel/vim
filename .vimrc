@@ -10,6 +10,9 @@ set tabstop=2
 " Identify file type and apply indentation
 filetype plugin indent on
 
+" Theme
+colorscheme desert
+
 " Apply colors on editor
 syntax on
 
@@ -41,11 +44,6 @@ augroup nosplit | au!
   autocmd ColorScheme * hi VertSplit ctermfg=black guifg=black guibg=black ctermbg=black
 augroup end
 
-" Dracula theme
-packadd! dracula
-syntax enable
-" colorscheme dracula
-
 " 256 color support for terminal
 set t_Co=256
 
@@ -54,7 +52,7 @@ set expandtab
 set softtabstop=2
 
 " Spell checking
-" set spell spelllang=pt_br,en_us
+set spell spelllang=pt_br,en_us
 
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
