@@ -22,6 +22,8 @@ set shiftwidth=2
 " Backspace usual behaviour
 set backspace=2
 
+set laststatus=2
+
 " Show line numbers
 set number
 
