@@ -29,3 +29,6 @@
 [submodule ".vim/pack/plugins/start/vim-devicons"]
 	path = .vim/pack/plugins/start/vim-devicons
 	url = git@github.com:ryanoasis/vim-devicons.git
+[submodule ".vim/pack/color/start/gruvbox"]
+	path = .vim/pack/color/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

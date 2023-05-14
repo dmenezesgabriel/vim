@@ -11,7 +11,7 @@ set tabstop=2
 filetype plugin indent on
 
 " Theme
-colorscheme desert
+colorscheme gruvbox
 
 " Apply colors on editor
 syntax on
