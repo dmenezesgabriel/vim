@@ -12,6 +12,8 @@ filetype plugin indent on
 
 " Theme
 colorscheme gruvbox
+let g:airline_theme='gruvbox'
+let g:airline#extensions#tabline#enabled = 1
 
 " Apply colors on editor
 syntax on
@@ -52,7 +54,7 @@ set expandtab
 set softtabstop=2
 
 " Spell checking
-set spell spelllang=pt_br,en_us
+set spell spelllang=en_us
 
 " Highlight trailing spaces
 highlight RedundantSpaces ctermbg=red guibg=red
