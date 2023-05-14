@@ -34,6 +34,14 @@ set incsearch
 " Highlight search results
 set hlsearch
 
+" Intent according to file extension
+set smartindent
+
+"Remove pipes vertical separator
+augroup nosplit | au!
+  autocmd ColorScheme * hi VertSplit ctermfg=black guifg=black guibg=black ctermbg=black
+augroup end
+
 " Dracula theme
 packadd! dracula
 syntax enable
