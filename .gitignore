@@ -1,3 +1,4 @@
 *.swp
 node_modules/
-.vim/black/*
+# black formatter
+.vim/pack/python
